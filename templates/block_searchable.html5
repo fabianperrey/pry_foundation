@@ -1,0 +1,11 @@
+
+<div class="<?= $this->class ?> block<?php if($this->fdnClass): ?> <?= $this->fdnClass ?><?php endif; ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?><?php if($this->fdnAttributes): ?> <?= $this->fdnAttributes ?><?php endif; ?>>
+
+  <?php if ($this->headline): ?>
+    <<?= $this->hl ?><?php if($this->useFoundationBlockGrid): ?> class="row column"<?php endif; ?>><?= $this->headline ?></<?= $this->hl ?>>
+  <?php endif; ?>
+
+  <?php $this->block('content'); ?>
+  <?php $this->endblock(); ?>
+
+</div>

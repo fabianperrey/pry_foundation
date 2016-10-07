@@ -1,0 +1,51 @@
+.w20 {
+	width: 20%;
+	float:left;
+	height: 72px;
+}
+
+.w20 .tl_select {
+	width:133px;
+}
+
+.w33 {
+	width: 33.33%;
+	float:left;
+	height: 72px;
+}
+
+.w33 .tl_select {
+	width:204px;
+}
+
+@media (max-width: 767px){
+	
+	.w20,
+	.w33 {
+		width: auto;
+		float: none;
+	}
+
+	.w20 .tl_select,
+	.w33 .tl_select {
+		width: 100%;
+	}	
+}
+
+@media (min-width: 1200px){
+	
+	.w20 .tl_select {
+		width: 167px;;
+	}
+
+	.w33 .tl_select {
+		width: 266px;;
+	}	
+}
+
+.w20 .tl_help,
+.w33 .tl_help {
+    margin-right: 24px;
+}
+
+

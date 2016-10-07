@@ -1,0 +1,2 @@
+<div class="<?= $this->fdnColumns ?>">
+	<div class="row<?php if($this->fdnClass): ?> <?= $this->fdnClass ?><?php endif; ?>"<?php if($this->fdnAttributes): ?> <?= $this->fdnAttributes ?><?php endif; ?>>

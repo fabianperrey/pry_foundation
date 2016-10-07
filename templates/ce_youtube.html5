@@ -1,0 +1,11 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+  <!-- indexer::stop -->
+  <div class="flex-video widescreen">
+    <iframe<?php if($this->size): ?> <?= $this->size ?><?php endif; ?> src="<?= $this->path ?><?php if ($this->autoplay): ?>?rel=0&autoplay=1<?php endif; ?>" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <!-- indexer::continue -->
+
+<?php $this->endblock(); ?>
