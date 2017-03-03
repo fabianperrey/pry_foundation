@@ -12,6 +12,7 @@ TemplateLoader::addFiles(array
 	'block_searchable'          => 'system/modules/pry_foundation/templates',
 	'ce_headline'               => 'system/modules/pry_foundation/templates',
 	'ce_downloads'              => 'system/modules/pry_foundation/templates',
+	'ce_hyperlink'              => 'system/modules/pry_foundation/templates',
 	'ce_youtube'                => 'system/modules/pry_foundation/templates',
 	'ce_fdnhr'   	        	=> 'system/modules/pry_foundation/templates',
 	'ce_fdnrow_start'           => 'system/modules/pry_foundation/templates',
@@ -47,6 +48,4 @@ ClassLoader::addClasses(array
 	// Form fields
 	// Accordion
 	// Slider
-	// Button
-
 ));

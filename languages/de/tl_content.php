@@ -124,3 +124,15 @@ $GLOBALS['TL_LANG']['tl_content']['fdn_rowExpanded'] = array
 	'Volle Breite',
 	'Inhalte werden nicht durch das Grid begrenzt und über die volle Seitenbreite dargestellt ("Expanded").'
 );
+
+$GLOBALS['TL_LANG']['tl_content']['fdn_button'] = array
+(
+	'Button',
+	'Hyperlink als Button auszeichnen.'
+);
+
+$GLOBALS['TL_LANG']['tl_content']['fdn_buttonClasses'] = array
+(
+	'Button Klassen',
+	'Zusätzliche Auszeichnungsklassen für die Button Formatierung (z.B. "primary large hollow").'
+);

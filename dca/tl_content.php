@@ -75,7 +75,7 @@ $GLOBALS['TL_DCA']['tl_content']['palettes']['downloads'] = str_replace
 $GLOBALS['TL_DCA']['tl_content']['palettes']['hyperlink'] = str_replace
 (
 	'{template_legend:hide}',
-	'{foundation_legend},useFoundation;{template_legend:hide}',
+	'{foundation_legend},useFoundation,fdn_button,fdn_buttonClasses;{template_legend:hide}',
 	$GLOBALS['TL_DCA']['tl_content']['palettes']['hyperlink']
 );
 
@@ -96,7 +96,6 @@ $GLOBALS['TL_DCA']['tl_content']['palettes']['rowStop'] = '{type_legend},type;{t
  */
 $GLOBALS['TL_DCA']['tl_content']['subpalettes']['useFoundation'] = 'fdn_small,fdn_medium,fdn_large,fdn_equalizer,fdn_end,fdn_textAlign,fdn_classes,fdn_attributes';
 $GLOBALS['TL_DCA']['tl_content']['subpalettes']['useFoundationBlockGrid'] = 'fdn_small,fdn_medium,fdn_large,fdn_smallBlock,fdn_mediumBlock,fdn_largeBlock,fdn_equalizer,fdn_classes,fdn_attributes';
-
 
 /*
  * Fields
@@ -244,4 +243,22 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['fdn_rowExpanded'] = array
 	'inputType'               => 'checkbox',
 	'eval'                    => array('tl_class'=>'w50'),
 	'sql'                     => "char(1) NOT NULL default ''"
+);
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['fdn_button'] = array
+(
+	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['fdn_button'],
+	'exclude'                 => true,
+	'inputType'               => 'checkbox',
+	'default'                 => 1,
+	'sql'                     => "char(1) NOT NULL default ''"
+);
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['fdn_buttonClasses'] = array
+(
+	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['fdn_buttonClasses'],
+	'exclude'                 => true,
+	'inputType'               => 'text',
+	'eval'                    => array('maxlength'=>255, 'allowHtml'=>true, 'class'=>'monospace', 'rte'=>'ace', 'tl_class'=>'long clr'),
+	'sql'                     => "varchar(255) NOT NULL default ''"
 );
