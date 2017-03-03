@@ -18,6 +18,8 @@ TemplateLoader::addFiles(array
 	'ce_fdnrow_start'           => 'system/modules/pry_foundation/templates',
 	'ce_fdnrow_stop'            => 'system/modules/pry_foundation/templates',
 	'gallery_default'           => 'system/modules/pry_foundation/templates',
+	'ce_slider_start'           => 'system/modules/pry_foundation/templates',
+	'ce_slider_stop'            => 'system/modules/pry_foundation/templates',
 
 	//'form_row'   => '',
 	//'form_radio'   => '',
